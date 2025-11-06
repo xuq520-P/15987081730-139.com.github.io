@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 50px 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 40px;
+        }
+        .avatar-box {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e8f4f8;
+        }
+        .name {
+            font-size: 28px;
+            color: #2d3748;
+            margin: 15px 0 8px;
+            font-weight: 600;
+        }
+        .title {
+            font-size: 18px;
+            color: #4299e1;
+            margin-bottom: 20px;
+        }
+        .info-section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 20px;
+            color: #2d3748;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8f4f8;
+        }
+        .section-content {
+            font-size: 16px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+        .contact-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            color: #4a5568;
+        }
+        .contact-list li::before {
+            content: "•";
+            color: #4299e1;
+            font-size: 20px;
+            margin-right: 8px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 30px 20px;
+            }
+            .avatar {
+                width: 150px;
+                height: 150px;
+            }
+            .name {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头像与基础信息 -->
+        <div class="avatar-box">
+            <img src="52075687230498905061762438004115.jpg" alt="个人头像" class="avatar">
+            <h1 class="name">张三</h1>
+            <p class="title">前端开发工程师 | 热爱技术与创新</p>
+        </div>
+
+        <!-- 个人简介 -->
+        <div class="info-section">
+            <h2 class="section-title">关于我</h2>
+            <div class="section-content">
+                拥有3年前端开发经验，熟练掌握HTML、CSS、JavaScript等核心技术，擅长使用Vue、React框架构建高效、美观的Web应用。注重用户体验与代码质量，具备良好的沟通能力与团队协作精神，始终保持对新技术的学习热情，致力于通过技术解决实际问题，创造价值。
+            </div>
+        </div>
+
+        <!-- 兴趣爱好 -->
+        <div class="info-section">
+            <h2 class="section-title">兴趣爱好</h2>
+            <div class="section-content">
+                工作之余喜欢探索开源项目、阅读技术博客，同时热爱摄影、徒步旅行与健身，在自然与运动中放松身心，保持积极向上的生活状态。
+            </div>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="info-section">
+            <h2 class="section-title">联系方式</h2>
+            <div class="section-content">
+                <ul class="contact-list">
+                    <li>邮箱：zhangsan@example.com</li>
+                    <li>电话：138-xxxx-xxxx</li>
+                    <li>GitHub：github.com/zhangsan</li>
+                    <li>微信：zhangsan_123</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
